@@ -2,8 +2,6 @@
 <html lang="en">
 
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -107,28 +105,6 @@
     </section>
 
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-        $("#submit-form").submit((e)=>{
-            e.preventDefault()
-            $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbwwAk9cfJimvTOgZvvii_Riu9gZKKhaQkBRukaXtDbu1Cwc3IN-pZia-ekAtYMiyZ1Jkw/exec",
-                data:$("#submit-form").serialize(),
-                method:"post",
-                success:function (response){
-                    alert("Form submitted successfully")
-                    window.location.reload()
-                    //window.location.href="https://google.com"
-                },
-                error:function (err){
-                    alert("Something Error")
-    
-                }
-            })
-        })
-    </script>
 
 
 
@@ -222,15 +198,29 @@
             });
         });
     </script>
-    <!-- //MENU-JS -->
 
-    <!-- disable body scroll which navbar is in active -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbwwAk9cfJimvTOgZvvii_Riu9gZKKhaQkBRukaXtDbu1Cwc3IN-pZia-ekAtYMiyZ1Jkw/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
     
-    <!-- //disable body scroll which navbar is in active -->
+                }
+            })
+        })
+    </script>
 
-    <!-- bootstrap -->
-    <!-- //bootstrap -->
-    <!-- //Js scripts -->
+
 </body>
 
 </html>
