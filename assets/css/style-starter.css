@@ -4814,7 +4814,6 @@ fieldset:disabled .btn {
 }
 
 .navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .navbar-light .navbar-text {
@@ -4859,9 +4858,7 @@ fieldset:disabled .btn {
   border-color: rgba(255, 255, 255, 0.1);
 }
 
-.navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
+
 
 .navbar-dark .navbar-text {
   color: rgba(255, 255, 255, 0.55);
@@ -11754,7 +11751,7 @@ fieldset:disabled .btn {
 
 /* css style */
 :root {
-  --primary-color: #037ef3;
+  --primary-color: #00ff99;
   --secondary-color: #26D0CE;
   --font-color: #363636;
   --bg-color: #fff;
@@ -11768,26 +11765,11 @@ fieldset:disabled .btn {
   --serach-shadow: rgb(0 0 0 / 5%);
   --disable-color: #d8d6d6;
   --box-shadow: 0 20px 62px rgba(4, 20, 69, .1);
-  --layer: linear-gradient(to right, rgb(26 41 128 / 78%), rgb(46 234 232 / 59%));
-  --gradient-color: linear-gradient(to right, #1A2980, #26D0CE);
+  --layer:linear-gradient(90deg, rgba(76, 175, 80, 0.5) 0%, rgba(49, 220, 255, .8) );
+  --gradient-color: linear-gradient(to right, #4CAF50 , #31DCFF );
 }
 
-[data-theme="dark"] {
-  --primary-color: #037ef3;
-  --secondary-color: #26D0CE;
-  --font-color: #b7b7b7;
-  --bg-color: #09131d;
-  --heading-color: #fdfffc;
-  --border-color-light: rgba(255, 255, 255, 0.2);
-  --iframe-filter: grayscale(100%);
-  --bg-grey: #131917;
-  --bg-light: #060d15;
-  --serach-shadow: rgb(6 8 8);
-  --disable-color: #5d5d5d;
-  --box-shadow: 0 1rem 3rem rgb(4 8 12);
-  --layer: linear-gradient(to right, rgb(17 26 82 / 78%), rgb(26 136 135 / 59%));
-  --gradient-color: linear-gradient(to right, #17246d, #20a7a5);
-}
+
 
 * {
   box-sizing: border-box;
@@ -18885,6 +18867,8 @@ a.btn-style-primary i {
   align-items: center;
   min-height: 100vh;
   z-index: 0;
+   
+  
 }
 
 #demo-1:before {
@@ -20013,7 +19997,8 @@ h4.inner-text-title {
 }
 
 .icon i {
-  color: var(--primary-color);
+  color:#00ff99;
+
   font-size: 40px;
   margin-bottom: 20px;
 }
@@ -20163,3 +20148,93 @@ p.copy-footer-29 a:hover {
     margin-bottom: 10px;
   }
 }   
+
+/* movetop styling */
+#movetop {
+  position: fixed;
+  bottom: 90px;
+  right: 15px;
+  z-index: 9;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  padding: 0;
+}
+
+#movetop:hover {
+  opacity: .8;
+}
+
+/* //movetop styling */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");  
+ * {  
+  margin: 0;  
+  padding: 0;  
+  box-sizing: border-box;  
+ }  
+
+ .modal-container {  
+  opacity: 0;  
+  background-color: rgba(0, 0, 0, 0.3);  
+  position: fixed;  
+  left: 0;  
+  top: 0;  
+  height: 100vh;  
+  width: 100vw;  
+  display: flex;  
+  align-items: center;  
+  justify-content: center;  
+  min-height: 100vh;  
+  pointer-events: none;  
+  transition: opacity 0.5s ease;  
+ }  
+ button {  
+  background-color: #47a386;  
+  border: 0;  
+  border-radius: 5px;  
+  color: #fff;  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);  
+  font-size: 14px;  
+  padding: 10px 25px; 
+  margin-left: 350px;
+
+ }  
+ h1,  
+ button,  
+ p {  
+  margin-top: 15px;  
+ }  
+ .modal {  
+  text-align: center;  
+  border-radius: 5px;  
+  padding: 30px 50px;  
+  background-color: #fff;  
+  width: 600px;  
+  max-width: 100%;  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);  
+ }  
+ .modal h1 {  
+  margin: 0;  
+ }  
+ .modal p {  
+  font-size: 16px;  
+ }  
+ .show {  
+  opacity: 1;  
+  pointer-events: auto;  
+ }  
+ button:hover {  
+  background-color: #337560;  
+ }  
